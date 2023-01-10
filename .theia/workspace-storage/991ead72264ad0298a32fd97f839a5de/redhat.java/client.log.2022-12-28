@@ -1,0 +1,30 @@
+{
+  message: 'Starting Java server with: /usr/lib/jvm/java-17-openjdk-amd64/bin/java --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Djava.import.generatesMetadataFilesAtProjectRoot=false -Dfile.encoding=utf8 -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -jar /google/devshell/editor/theia/plugins/redhat.java-1.2.0/extension/server/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar -configuration /home/simon_nguyen773/.theia/globalStorage/redhat.java/1.2.0/config_ss_linux -data /home/simon_nguyen773/.theia/workspace-storage/991ead72264ad0298a32fd97f839a5de/redhat.java/ss_ws',
+  level: 'info',
+  timestamp: '2022-12-28 07:40:20.566'
+}
+{
+  message: 'Starting Java server with: /usr/lib/jvm/java-17-openjdk-amd64/bin/java --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Djava.import.generatesMetadataFilesAtProjectRoot=false -Dfile.encoding=utf8 -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/home/simon_nguyen773/.theia/workspace-storage/991ead72264ad0298a32fd97f839a5de/redhat.java -jar /google/devshell/editor/theia/plugins/redhat.java-1.2.0/extension/server/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar -configuration /home/simon_nguyen773/.theia/globalStorage/redhat.java/1.2.0/config_linux -data /home/simon_nguyen773/.theia/workspace-storage/991ead72264ad0298a32fd97f839a5de/redhat.java/jdt_ws',
+  level: 'info',
+  timestamp: '2022-12-28 07:40:21.074'
+}
+{
+  message: 'WARNING: Using incubator modules: jdk.incubator.foreign, jdk.incubator.vector\n',
+  level: 'info',
+  timestamp: '2022-12-28 07:40:21.324'
+}
+{
+  message: 'WARNING: Using incubator modules: jdk.incubator.foreign, jdk.incubator.vector\n',
+  level: 'info',
+  timestamp: '2022-12-28 07:40:21.710'
+}
+{
+  message: '[Error - 7:45:43 AM] Dec 28, 2022, 7:45:43 AM Workspace was not properly initialized or has already shutdown.',
+  level: 'info',
+  timestamp: '2022-12-28 07:45:43.596'
+}
+{
+  message: '[Error - 7:45:44 AM] Connection to server got closed. Server will not be restarted.',
+  level: 'info',
+  timestamp: '2022-12-28 07:45:44.026'
+}

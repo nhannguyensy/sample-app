@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 2
+    },
+    "auditLog": "/home/simon_nguyen773/.theia/workspace-storage/991ead72264ad0298a32fd97f839a5de/redhat.java/.6a474e865118d2d3557d02e570e76e26265ac5de-audit.json",
+    "files": [
+        {
+            "date": 1672213214559,
+            "name": "/home/simon_nguyen773/.theia/workspace-storage/991ead72264ad0298a32fd97f839a5de/redhat.java/client.log.2022-12-28",
+            "hash": "5083779571dc779ad9ca105070dd18de"
+        }
+    ]
+}
