@@ -1,1 +1,0 @@
-INDEX VERSION 1.131+/home/simon_nguyen773/.theia/workspace-storage/991ead72264ad0298a32fd97f839a5de/redhat.java/ss_ws/.metadata/.plugins/org.eclipse.jdt.core
