@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  annotations:
+    meta.helm.sh/release-name: cd-jenkins
+    meta.helm.sh/release-namespace: default
+    pv.kubernetes.io/bind-completed: "yes"
+    pv.kubernetes.io/bound-by-controller: "yes"
+    volume.beta.kubernetes.io/storage-provisioner: pd.csi.storage.gke.io
+    volume.kubernetes.io/selected-node: gk3-autopilot-cluster-1-nap-nljb2szs-b30cae69-9nnx
+    volume.kubernetes.io/storage-provisioner: pd.csi.storage.gke.io
+  creationTimestamp: "2023-01-10T07:25:04Z"
+  finalizers:
+  - kubernetes.io/pvc-protection
+  labels:
+    app.kubernetes.io/component: jenkins-controller
+    app.kubernetes.io/instance: cd-jenkins
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/name: jenkins
+    helm.sh/chart: jenkins-4.2.19
+  name: cd-jenkins
+  namespace: default
+  resourceVersion: "13046732"
+  uid: ca24ef0f-1111-43a2-a5ac-650c8b5d53e9
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 8Gi
+  storageClassName: standard-rwo
+  volumeMode: Filesystem
+  volumeName: pvc-ca24ef0f-1111-43a2-a5ac-650c8b5d53e9
+status:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 8Gi
+  phase: Bound

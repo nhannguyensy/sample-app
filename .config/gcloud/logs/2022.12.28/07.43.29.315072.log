@@ -1,0 +1,25 @@
+2022-12-28 07:43:29,330 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-12-28 07:43:29,338 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'get_credentials']
+2022-12-28 07:43:29,376 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/simon.nguyen773@gmail.com/?recursive=true
+2022-12-28 07:43:29,388 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2022-12-28 07:43:29,392 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/simon.nguyen773@gmail.com/?recursive=true HTTP/1.1" 200 None
+2022-12-28 07:43:29,394 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/simon.nguyen773@gmail.com/token
+2022-12-28 07:43:29,398 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2022-12-28 07:43:29,403 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/simon.nguyen773@gmail.com/token HTTP/1.1" 200 None
+2022-12-28 07:43:29,421 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/simon.nguyen773@gmail.com/?recursive=true
+2022-12-28 07:43:29,424 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2022-12-28 07:43:29,428 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/simon.nguyen773@gmail.com/?recursive=true HTTP/1.1" 200 None
+2022-12-28 07:43:29,429 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/simon.nguyen773@gmail.com/token
+2022-12-28 07:43:29,433 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2022-12-28 07:43:29,437 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/simon.nguyen773@gmail.com/token HTTP/1.1" 200 None
+2022-12-28 07:43:29,513 DEBUG    root            Running [gcloud.container.clusters.get-credentials] with arguments: [--project: "infinite-mantis-373007", --quiet: "True", --verbosity: "warning", --zone: "australia-southeast1", NAME: "autopilot-cluster-1"]
+2022-12-28 07:43:29,575 INFO     ___FILE_ONLY___ Fetching cluster endpoint and auth data.
+
+2022-12-28 07:43:29,582 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-12-28 07:43:29,741 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/infinite-mantis-373007/locations/australia-southeast1/clusters/autopilot-cluster-1?alt=json HTTP/1.1" 200 None
+2022-12-28 07:43:29,752 DEBUG    root            unable to load default kubeconfig: unable to load kubeconfig for /home/simon_nguyen773/.kube/config: Unable to read file [/home/simon_nguyen773/.kube/config]: [Errno 2] No such file or directory: '/home/simon_nguyen773/.kube/config'; recreating /home/simon_nguyen773/.kube/config
+2022-12-28 07:43:29,889 DEBUG    root            Saved kubeconfig to /home/simon_nguyen773/.kube/config
+2022-12-28 07:43:29,889 INFO     ___FILE_ONLY___ kubeconfig entry generated for autopilot-cluster-1.
+
+2022-12-28 07:43:29,892 INFO     root            Display format: "default"
+2022-12-28 07:43:29,892 DEBUG    root            SDK update checks are disabled.
