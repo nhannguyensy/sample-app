@@ -32,8 +32,6 @@ spec:
   - name: gcloud
     image: gcr.io/cloud-builders/gcloud
     command: ["sleep", "10000"]
-    - cat
-    tty: true
   - name: kubectl
     image: gcr.io/cloud-builders/kubectl
     command:
