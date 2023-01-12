@@ -34,6 +34,7 @@ spec:
     command:
     - cat
     tty: true
+    - ["sleep", "10000"]
   - name: kubectl
     image: gcr.io/cloud-builders/kubectl
     command:
