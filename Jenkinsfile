@@ -59,7 +59,9 @@ spec:
       steps {
         container('gcloud') {
           //sh "PYTHONUNBUFFERED=1 gcloud builds submit -t ${IMAGE_TAG} ."
-          sh docker build -t ${IMAGE_TAG} .
+          sh docker build -t nhannguyensy/testpipeline .
+          sh docker login -u="${DOCKER_USERNAME}" -p="${DOCKER_PASSWORD}"
+          sh docker push nhannguyensy/testpipeline
           sleep 10000
         }
       }
