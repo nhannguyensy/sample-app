@@ -31,6 +31,9 @@ spec:
     tty: true
   - name: gcloud
     image: odavid/jenkins-jnlp-slave
+    env: 
+    - name: DIND
+      value: "true"
     command: ["sleep", "10000"]
   - name: kubectl
     image: gcr.io/cloud-builders/kubectl
