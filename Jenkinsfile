@@ -30,7 +30,7 @@ spec:
     - cat
     tty: true
   - name: gcloud
-    image: gcr.io/cloud-builders/gcloud
+    image: odavid/jenkins-jnlp-slave
     command: ["sleep", "10000"]
   - name: kubectl
     image: gcr.io/cloud-builders/kubectl
@@ -56,6 +56,7 @@ spec:
       steps {
         container('gcloud') {
           //sh "PYTHONUNBUFFERED=1 gcloud builds submit -t ${IMAGE_TAG} ."
+          sh docker build -t ${IMAGE_TAG} .
           sleep 10000
         }
       }
