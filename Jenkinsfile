@@ -8,6 +8,9 @@ pipeline {
     CLUSTER_ZONE = "australia-southeast1"
     IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}:${env.BRANCH_NAME}.${env.BUILD_NUMBER}"
     JENKINS_CRED = "${PROJECT}"
+    DOCKER_USERNAME = "nhannguyensy"
+    DOCKER_PASSWORD = "Kh5yNYVqmJvakhTrMnR3"
+    
   }
 
   agent {
@@ -30,7 +33,7 @@ spec:
     - cat
     tty: true
   - name: gcloud
-    image: odavid/jenkins-jnlp-slave
+    image: russmedia/dockerindocker
     env: 
     - name: DIND
       value: "true"
