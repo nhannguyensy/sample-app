@@ -8,8 +8,8 @@ pipeline {
     CLUSTER_ZONE = "australia-southeast1"
     IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}:${env.BRANCH_NAME}.${env.BUILD_NUMBER}"
     JENKINS_CRED = "${PROJECT}"
-    DOCKER_USERNAME = "nhannguyensy"
-    DOCKER_PASSWORD = "Kh5yNYVqmJvakhTrMnR3"
+    DOCKER_USERNAME = "xxx"
+    DOCKER_PASSWORD = "xKh5yNYVqmJvakhTrMnR3"
     
   }
 
