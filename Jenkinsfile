@@ -58,17 +58,6 @@ spec:
         }
       }
     }
-    stage('Build and push image with Container Builder') {
-      steps {
-        container('gcloud') {
-          //sh "PYTHONUNBUFFERED=1 gcloud builds submit -t ${IMAGE_TAG} ."
-          sh "docker build -t nhannguyensy/testpipeline ."
-          sh "docker login -u=env.DOCKER_USERNAME -p=env.DOCKER_PASSWORD"
-          sh "docker push nhannguyensy/testpipeline"
-          sleep 10000
-        }
-      }
-    }
     stage('Deploy Canary') {
       // Canary branch
       when { branch 'canary' }
