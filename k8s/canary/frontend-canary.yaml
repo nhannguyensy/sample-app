@@ -33,7 +33,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: gcr.io/infinite-mantis-373007/gceme:1.0.0
+        image: gcr.io/infinite-mantis-373007/gceme:production.123
         resources:
           limits:
             memory: "500Mi"
