@@ -15,25 +15,25 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: gceme-backend-canary
+  name: gceme-frontend-canary
 spec:
-  replicas: 1
+  replicas:
   selector:
       matchLabels:
           app: gceme
-          role: backend
+          role: frontend
           env: canary
   template:
     metadata:
-      name: backend
+      name: frontend
       labels:
         app: gceme
-        role: backend
+        role: frontend
         env: canary
     spec:
       containers:
-      - name: backend
-        image: gcr.io/infinite-mantis-373007/gceme:3.0.0
+      - name: frontend
+        image: gcr.io/infinite-mantis-373007/gceme:production.123
         resources:
           limits:
             memory: "500Mi"
@@ -42,8 +42,8 @@ spec:
         readinessProbe:
           httpGet:
             path: /healthz
-            port: 8080
-        command: ["sh", "-c", "app -port=8080"]
+            port: 80
+        command: ["sh", "-c", "app -frontend=true -backend-service=http://gceme-backend:8080 -port=80"]
         ports:
-        - name: backend
-          containerPort: 8080
+        - name: frontend
+          containerPort: 80
