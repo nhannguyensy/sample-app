@@ -15,25 +15,25 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: gceme-frontend-production
+  name: gceme-backend-production
 spec:
-  replicas:
+  replicas: 1
   selector:
       matchLabels:
           app: gceme
-          role: frontend
+          role: backend
           env: production
   template:
     metadata:
-      name: frontend
+      name: backend
       labels:
         app: gceme
-        role: frontend
+        role: backend
         env: production
     spec:
       containers:
-      - name: frontend
-        image: gcr.io/infinite-mantis-373007/gceme:3.0.0
+      - name: backend
+        image: gcr.io/infinite-mantis-373007/gceme:production.123
         resources:
           limits:
             memory: "500Mi"
@@ -42,8 +42,8 @@ spec:
         readinessProbe:
           httpGet:
             path: /healthz
-            port: 80
-        command: ["sh", "-c", "app -frontend=true -backend-service=http://gceme-backend:8080 -port=80"]
+            port: 8080
+        command: ["sh", "-c", "app -port=8080"]
         ports:
-        - name: frontend
-          containerPort: 80
+        - name: backend
+          containerPort: 8080
