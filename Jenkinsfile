@@ -10,7 +10,7 @@ pipeline {
     IMAGE_TAG = "gcr.io/infinite-mantis-373007/gceme:3.0.0"
     JENKINS_CRED = "${PROJECT}"
     DOCKER_USERNAME = "xxx"
-    DOCKER_PASSWORD = "xKh5yNYVqmJvakhTrMnR3"
+    DOCKER_PASSWORD = "clear"
     
   }
 
