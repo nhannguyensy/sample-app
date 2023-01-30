@@ -9,7 +9,7 @@ pipeline {
     IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}:${env.BRANCH_NAME}.${env.BUILD_NUMBER}"
     JENKINS_CRED = "${PROJECT}"
     DOCKER_USERNAME = "xxx"
-    DOCKER_PASSWORD = "xKh5yNYVqmJvakhTrMnR3"
+    DOCKER_PASSWORD = "main"
     
   }
 
